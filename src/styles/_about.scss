@@ -1,0 +1,137 @@
+.about--container{
+    height: 110vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: #F9F9F9;
+    padding: 0 25px;
+}
+
+.about--first-part{
+   grid-column: 1 / -1;
+   grid-row: 3;
+
+    h2{   
+        margin-top: 30px;
+        font-size: $big-size;
+        font-family: $first-font;
+        color: $second-color;
+        text-align: center;
+    }
+    p:nth-child(2){
+        font-size: $smaller-size;
+        line-height: 3rem;
+        color: $first-color;
+        margin-top: 35px;
+        text-align: center;
+        font-family: $first-font;
+
+        &::before, &::after{
+            content: '';
+        }
+    }
+   
+}
+
+.about--first-part p::before, .about--second-part p::before, h2::before{
+    content: '<';
+}
+
+.about--first-part p::after, .about--second-part p::after, h2::after{
+    content: ' />';
+}
+
+
+.about--name-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    li{
+        width: 100%;
+        border-bottom: 4px solid $fourth-color;
+        font-size: $smaller-size;
+        letter-spacing: 2px;
+        font-family: $second-font;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $first-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+
+    li{
+        margin: 5px;
+    }
+}
+
+.about--icon-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+    
+    svg{
+    
+        width: 40px;
+        height: 40px;
+        color: $fourth-color;
+    }
+}
+
+.about--second-part{
+    grid-column: 1 /-1;
+    grid-row: 4;
+
+    p:first-child, p:nth-child(3){
+        font-size: $medium-size;
+        font-family: $third-font;
+        color: $second-color;
+        text-align: start;
+        margin-top: 50px;
+    }
+
+    p:nth-child(3){
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 426px){
+    .about--container {
+        height: 100vh;
+    }
+    .about--first-part p:nth-child(2) {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .about--container{
+        padding: 0 100px;
+    }
+
+    .about--icon-container{
+        svg:hover{
+            color: #333;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+
+@media screen and (min-width: 800px){
+    .about--first-part{
+        h2{   
+            font-size: 2rem;
+        }
+
+        p:nth-child(2){   
+            font-size: 1.5rem;
+        }
+    }
+}

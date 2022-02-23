@@ -1,0 +1,90 @@
+.footer--container{
+    @include mobileViewGrid;
+    height: 90vh;
+    width: 100%;
+    background-color: $first-color;
+    text-align: center;
+    font-family: $first-font;
+}
+
+.footer--interested{
+    grid-column: 2 / 8;
+    grid-row: 3;
+    font-size: 1.4rem;
+    color: $second-color;
+
+    &::before{
+        content: '<';
+        color: $third-color;
+    }
+    &::after{
+        content: ' />';
+        color: $third-color;
+    }
+}
+
+
+
+.footer--first{
+    font-size: $medium-size;
+    grid-column: 2 / 8;
+    font-family: $third-font;
+    color: $second-color;
+    text-align: start;
+    margin-top: 50px;
+
+    &::before{
+        content: '<';
+    }
+    
+    &::after{
+        content: ' />';
+    }
+    
+}
+
+.footer--second{
+    margin-top: 10px;
+    grid-column: 2 / 8;
+    color: $third-color;
+    font-size: $smaller-size;
+}
+
+.email{
+    grid-row: 4;
+}
+
+.email-name{
+    grid-row: 5;
+}
+
+.github{
+    grid-row: 6;
+}
+
+.github-name{
+    grid-row: 7;
+}
+
+.linkedin{
+    grid-row: 8;
+}
+
+.linkedin-name{
+    grid-row: 9;
+}
+
+
+
+@media screen and (min-width: 426px){
+    .footer--first{
+        grid-column: 3 / 6;
+    }
+
+    .footer--container a{
+        &:hover{
+            color: $second-color;
+            transition: all 0.2s;
+        }
+    }
+}

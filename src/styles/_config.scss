@@ -1,0 +1,56 @@
+$first-color: #222;
+$second-color: rgb(94, 228, 53);
+$third-color: #FFF;
+$fourth-color: #808080;
+
+$first-font: "Varela Round", sans-serif;
+$second-font: "Secular One", sans-serif;
+$third-font: "Bree Serif", serif;
+
+$big-size: 1.6rem;
+$medium-size: 1.5rem;
+$small-size: 1.3rem;
+$smaller-size: 1.2rem;
+
+@mixin mobileViewGrid{  
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+};
+
+
+@mixin tabletViewGrid{
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+};
+
+@mixin desktopViewGrid{
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+@mixin navbarDisplayFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+@mixin buttonStyle{
+    margin-top: 50px;
+    width: 250px;
+    height: 69px;
+    color: $third-color;
+    border: solid 4px rgba(136, 136, 136, 0.7);
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-family: "Varela Round", sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}

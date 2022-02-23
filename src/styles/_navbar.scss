@@ -1,0 +1,141 @@
+.navbar--container{
+    @include mobileViewGrid;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    z-index: 10000;
+ 
+    a{
+        font-family: $first-font;
+        color: $third-color;
+        font-size: 1rem;    
+        font-weight: bold;
+        letter-spacing: 1px;      
+        
+        &:active{
+            border-bottom: 3px solid $third-color
+        }
+    }
+
+    .toggleBox svg{
+        color: $second-color;
+        width: $medium-size;
+        height: $medium-size;
+    }
+}
+
+
+#closed{
+    @include navbarDisplayFlex;
+    position: fixed;
+     
+    nav{
+        visibility: hidden;
+    }
+
+   ul{
+        margin-bottom: 100px;
+   }
+}
+
+
+
+#opened{
+    @include navbarDisplayFlex;
+    position: fixed;
+    
+    .nav{
+        visibility: visible;
+    }
+    
+    ul{
+        position: fixed;
+        margin-top: 30px;
+        height: 250px;
+        left: 0;
+        background-color: $second-color;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul a{
+        margin: 15px;
+        font-size: $small-size;
+    }
+
+}
+
+
+// Desktop Styles
+@media screen and (min-width: 769px){
+    .navbarContainer{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    #closed nav{
+        visibility: visible;
+
+        ul{
+            padding: 0 20px;
+        }
+    }
+    #closed{
+        
+        background-color: #333;
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+                    
+        .navbar--navigation a{
+            margin: 20px;
+            text-decoration: none;
+            font-size: 1.1rem;  
+
+            &:hover{
+                color: $second-color;
+                transition: all 0.2s;
+            }
+        }
+
+    }
+
+    .toggleBox svg{
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 770px){
+    #closed{
+        ul{
+            margin-bottom: 0px;
+       }
+    }
+    
+    #opened ul {
+        position: unset;
+        margin-top: 0;
+        height: unset;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .navbar--navigation{
+            width: 100%;
+        }
+    }
+
+
+
+}
+
+
+

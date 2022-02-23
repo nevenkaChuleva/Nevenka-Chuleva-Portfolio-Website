@@ -1,0 +1,82 @@
+.header--container{
+    background-color: $first-color;
+    text-align: center;
+    @include mobileViewGrid;
+    color: $third-color;
+    font-family: $second-font;
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.header--icon-container{
+    grid-column: 2 / 8;
+    grid-row: 10;
+    display: flex;
+    justify-content: space-evenly;
+
+    svg{
+        width: 40px;
+        height: 40px;
+        color: white;
+    }
+}
+
+.header--everything{
+    grid-column: 2 / 8;
+    grid-row: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    & > *{
+        padding: 10px 0;
+    }
+}
+
+.header--paragraph:nth-of-type(1){
+    font-size: 2rem;
+    font-family: $second-font;
+    letter-spacing: 1px;
+    padding-bottom: 0 !important;
+}
+
+.header--coloured{
+    color: $second-color;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.header--paragraph:nth-of-type(2){
+    color: $third-color;
+    font-size: $small-size;
+    font-family: $second-font;
+}
+
+.header--button{
+    @include buttonStyle;
+
+    &:hover{
+        border-color: $second-color;
+        transition: all 0.3s ease-in-out;
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+    .header--icon-container{
+        grid-column: 3 / 7;
+
+        svg:hover{
+            color: $second-color;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+    }
+
+
+}
