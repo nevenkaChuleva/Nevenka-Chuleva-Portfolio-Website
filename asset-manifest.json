@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Nevenka-Chuleva-Portfolio-Website/static/css/main.ab84c71d.css",
-    "main.js": "/Nevenka-Chuleva-Portfolio-Website/static/js/main.978d2a92.js",
+    "main.js": "/Nevenka-Chuleva-Portfolio-Website/static/js/main.f34c8433.js",
     "static/media/plant-store.PNG": "/Nevenka-Chuleva-Portfolio-Website/static/media/plant-store.52799320c31daa938146.PNG",
     "static/media/CV_Chuleva_Nevenka.pdf": "/Nevenka-Chuleva-Portfolio-Website/static/media/CV_Chuleva_Nevenka.f9fc46f9bbfd98173492.pdf",
     "static/media/the-flag-game.PNG": "/Nevenka-Chuleva-Portfolio-Website/static/media/the-flag-game.007d209d4c6a87b84c94.PNG",
     "static/media/rock-paper-scissors.PNG": "/Nevenka-Chuleva-Portfolio-Website/static/media/rock-paper-scissors.415403f19e6843818905.PNG",
     "index.html": "/Nevenka-Chuleva-Portfolio-Website/index.html",
     "main.ab84c71d.css.map": "/Nevenka-Chuleva-Portfolio-Website/static/css/main.ab84c71d.css.map",
-    "main.978d2a92.js.map": "/Nevenka-Chuleva-Portfolio-Website/static/js/main.978d2a92.js.map"
+    "main.f34c8433.js.map": "/Nevenka-Chuleva-Portfolio-Website/static/js/main.f34c8433.js.map"
   },
   "entrypoints": [
     "static/css/main.ab84c71d.css",
-    "static/js/main.978d2a92.js"
+    "static/js/main.f34c8433.js"
   ]
 }
