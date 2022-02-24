@@ -12,7 +12,7 @@ export default function Header() {
             <p className="header--paragraph header--coloured">Hello</p>
             <h1>I<span className="header--coloured">'</span>m Nevenka Chuleva<span className="header--coloured">.</span></h1>
             <p className="header--paragraph"> | Frontend Developer | </p>
-            <a href={CVPDF} download><button className="header--button"> Download CV </button></a>
+            <a href={CVPDF} target="_blank"><button className="header--button"> View CV </button></a>
         </div>
 
         <div className="header--icon-container">
